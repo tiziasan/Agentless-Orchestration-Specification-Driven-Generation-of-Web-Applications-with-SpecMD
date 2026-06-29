@@ -33,6 +33,6 @@ Then open the local URL printed by Vite in your browser.
 
 
 
-
+To replicate the functional test check the methodology on the baseline repository https://github.com/mnluzimu/WebGen-Bench/tree/main
 
 
