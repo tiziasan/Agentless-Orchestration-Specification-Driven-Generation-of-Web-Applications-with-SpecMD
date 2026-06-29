@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SpecMD Builder v4 — React Web App Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="specmd-builder.css"/>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- Dependencies (CDN) -->
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+  <!--
+    NOTE: This script tag uses type="text/babel" so Babel can transpile JSX.
+    To serve locally use:  npx serve .   or   python -m http.server 8080
+    WebStorm: use the built-in web server (right-click → Open In → Browser).
+    The JSX errors WebStorm shows in specmd-builder.js are expected false-positives
+    — WebStorm does not recognise text/babel scripts. The code runs fine in browsers.
+  -->
+  <script type="text/babel" data-presets="react" src="specmd-builder.js"></script>
+</body>
+</html>
